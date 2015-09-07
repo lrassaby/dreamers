@@ -3,13 +3,15 @@
 /*****************************************************************************/
 
 Meteor.methods({
-  'lib/method_name': function () {
-    
-    if (this.isSimulation) {
-    //   // do some client stuff while waiting for
-    //   // result from server.
-    //   return;
-    }
-    // server method logic
+  // TODO: impelement user roles
+  'createUserNoRole': function(data) {
+    //Do server side validation
+    return Accounts.createUser({
+      email: data.email,
+      password: data.password,
+      fullname: data.fullname,
+      username: data.username,
+      profile: {}
+    });
   }
 });

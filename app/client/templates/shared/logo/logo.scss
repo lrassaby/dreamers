@@ -1,15 +1,17 @@
 /*****************************************************************************/
-/* main: Style */
+/* Logo: Style */
 /*****************************************************************************/
-@import 'client/stylesheets/foundation-with-overrides';
 @import 'client/stylesheets/variables';
 
-html {
-  body {
-    height: 100%;
+.logo {
+  font-family: $header-font-stack;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  .dreamers-text, .doers-text {
     color: #333;
-    font-family: $standard-font-stack;
-    font-weight: 400;
-    font-size: 13px;
+  }
+  .slashes {
+    color: $dreamers-green;
   }
 }

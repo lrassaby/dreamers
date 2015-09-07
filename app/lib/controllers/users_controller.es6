@@ -1,12 +1,19 @@
-HomeController = RouteController.extend({
+UsersController = RouteController.extend({
+  create: function () {
+    this.render('CreateProfile', {})
+  },
+
+
+
   // A place to put your subscriptions
   // this.subscribe('items');
   // // add the subscription to the waitlist
   // this.subscribe('item', this.params._id).wait();
   
   subscriptions: function() {
+     this.subscribe('profiles')
   },
-  
+   
   // Subscriptions or other things we want to "wait" on. This also
   // automatically uses the loading hook. That's the only difference between
   // this option and the subscriptions option above.

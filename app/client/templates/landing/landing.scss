@@ -1,0 +1,28 @@
+/*****************************************************************************/
+/* Landing: Style */
+/*****************************************************************************/
+@import 'client/stylesheets/variables';
+
+
+.landing {
+  border-top: solid $primary-color 85px;
+  .logo {
+    font-size: 40px;
+    font-weight: 200;
+    border-bottom: solid $primary-color 2px;
+  }
+  h1 {
+    font-family: $header-font-stack;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  .row-signup {
+    max-width: 500px;
+  }
+  .welcome {
+
+    .center-line {
+      font-weight: 500;
+    }
+  }
+}

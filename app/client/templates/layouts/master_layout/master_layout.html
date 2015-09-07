@@ -1,3 +1,9 @@
 <template name="MasterLayout">
-  {{> yield}}
+  {{#if currentUser}}
+    {{> Topbar}}
+  {{/if}}
+  <div class="content">
+    {{> yield}}
+  </div>
+  {{initFoundation}} 
 </template>

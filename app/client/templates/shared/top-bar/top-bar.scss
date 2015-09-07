@@ -1,0 +1,28 @@
+/*****************************************************************************/
+/* Topbar: Style */
+/*****************************************************************************/
+@import 'client/stylesheets/variables';
+
+.top-bar {
+  .logo {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  border-bottom: 1px solid $dreamers-green;
+  transition: all 0.5s ease 0.1s;
+
+  .user-photo {
+    // TODO: remove image distortion
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
