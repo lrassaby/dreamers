@@ -1,10 +1,18 @@
 <template name="Signup">
     <div class="signup">
-        <form id="new-user-form">
+        <form class="new-user-form">
             <div class="row">
               <div class="small-12 columns">
                 <input name="fullname" type="text" placeholder="Full name">
               </div>
+            </div>
+            <div class="row collapse">
+                <div class="small-2 columns">
+                    <span class="prefix"><i class="fa fa-user"></i></span>
+                </div>
+                <div class="small-10 columns">
+                    <input name="username" type="text" placeholder="Username">
+                </div>
             </div>
             <div class="row collapse">
                 <div class="small-2 columns">
@@ -22,16 +30,12 @@
                     <input name="password" type="password" placeholder="Password">
                 </div>
             </div>
-            <div class="row collapse">
-                <div class="small-2 columns">
-                    <span class="prefix"><i class="fa fa-user"></i></span>
-                </div>
-                <div class="small-10 columns">
-                    <input name="username" type="text" placeholder="Username">
-                </div>
+            <!-- TODO: subscribe to our newsletter -->
+            <div class="text-center"> 
+                 <input type="submit" class="button radius" value="Sign Up">
             </div>
         </form>
-        <div id="signup-button" class="button radius">Sign Up</div>
+        
         <p>Already have an account? <a href="/login">Sign In &raquo;</a></p>
         <div class="text-justify">
          <p class="disclaimer">By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use. Others will be able to find you by email when provided.</p>

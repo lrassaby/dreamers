@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* CreateProfile: Event Handlers */
+/* DirectoryProfile: Event Handlers */
 /*****************************************************************************/
-Template.CreateProfile.events({
+Template.DirectoryProfile.events({
 });
 
 /*****************************************************************************/
-/* CreateProfile: Helpers */
+/* DirectoryProfile: Helpers */
 /*****************************************************************************/
-Template.CreateProfile.helpers({
+Template.DirectoryProfile.helpers({
 });
 
 /*****************************************************************************/
-/* CreateProfile: Lifecycle Hooks */
+/* DirectoryProfile: Lifecycle Hooks */
 /*****************************************************************************/
-Template.CreateProfile.onCreated(function () {
+Template.DirectoryProfile.onCreated(function () {
 });
 
-Template.CreateProfile.onRendered(function () {
+Template.DirectoryProfile.onRendered(function () {
 });
 
-Template.CreateProfile.onDestroyed(function () {
+Template.DirectoryProfile.onDestroyed(function () {
 });

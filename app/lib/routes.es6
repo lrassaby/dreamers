@@ -11,14 +11,13 @@ Router.route('/', {
 });
 
 Router.route('/login', {
-  name: 'login',
-  profile: 'UsersController',
+  name: 'login_page',
+  controller: 'UsersController',
   where: 'client'
 });
 
-
 Router.route('/:username', {
-  name: 'profile',
-  profile: 'UsersController',
+  name: 'view_profile',
+  controller: 'UsersController',
   where: 'client'
 });

@@ -1,17 +1,11 @@
 UsersController = RouteController.extend({
-  create: function () {
-    this.render('CreateProfile', {})
-  },
-
-
-
   // A place to put your subscriptions
   // this.subscribe('items');
   // // add the subscription to the waitlist
   // this.subscribe('item', this.params._id).wait();
   
   subscriptions: function() {
-     this.subscribe('profiles')
+    this.subscribe('users');
   },
    
   // Subscriptions or other things we want to "wait" on. This also
@@ -29,6 +23,7 @@ UsersController = RouteController.extend({
   // return Posts.findOne({_id: this.params._id});
   
   data: function () {
+    return Meteor.users.find({});
   },
   
   // You can provide any of the hook options

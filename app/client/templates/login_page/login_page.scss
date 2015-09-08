@@ -1,10 +1,10 @@
 /*****************************************************************************/
-/* Landing: Style */
+/* LoginPage: Style */
 /*****************************************************************************/
 @import 'client/stylesheets/variables';
 
 
-.landing {
+.login-page {
   border-top: solid $primary-color 85px;
   .logo {
     font-size: 40px;
@@ -16,7 +16,8 @@
     font-size: 30px;
     font-weight: 300;
   }
-  .row-signup {
+ 
+  .row-login {
     max-width: 500px;
   }
   .welcome {

@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* ProfileSmall: Event Handlers */
+/* LoginPage: Event Handlers */
 /*****************************************************************************/
-Template.ProfileSmall.events({
+Template.LoginPage.events({
 });
 
 /*****************************************************************************/
-/* ProfileSmall: Helpers */
+/* LoginPage: Helpers */
 /*****************************************************************************/
-Template.ProfileSmall.helpers({
+Template.LoginPage.helpers({
 });
 
 /*****************************************************************************/
-/* ProfileSmall: Lifecycle Hooks */
+/* LoginPage: Lifecycle Hooks */
 /*****************************************************************************/
-Template.ProfileSmall.onCreated(function () {
+Template.LoginPage.onCreated(function () {
 });
 
-Template.ProfileSmall.onRendered(function () {
+Template.LoginPage.onRendered(function () {
 });
 
-Template.ProfileSmall.onDestroyed(function () {
+Template.LoginPage.onDestroyed(function () {
 });

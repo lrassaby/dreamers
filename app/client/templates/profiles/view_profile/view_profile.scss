@@ -1,5 +1,34 @@
 /*****************************************************************************/
 /* ViewProfile: Style */
 /*****************************************************************************/
+@import 'client/stylesheets/variables';
+
 .view-profile {
+  .profile-name {
+    font-size: 20px;
+    font-family: $header-font-stack;
+  }
+  .cover-photo {
+    background-image: url("http://25.media.tumblr.com/tumblr_mcn621Mof41qbajzvo1_1280.jpg");
+    height: 400px;
+  }
+  .avatar {
+    margin-top: -120px;
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 3px rgba(136,153,166,0.15);
+    height: 200px;
+    position: relative;
+    width: 200px;
+
+    img {
+      border-radius: 8px;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
 }

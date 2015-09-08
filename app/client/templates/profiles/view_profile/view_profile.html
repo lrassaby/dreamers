@@ -1,5 +1,15 @@
 <template name="ViewProfile">
+  {{> Topbar}}
   <div class="view-profile">
-    <h1>Find me in app/client/templates/profiles/view_profile/view_profile</h1>
+    <div class="cover-photo">
+    </div>
+    <div class="row photo-row"> 
+      <div class="small-3 columns">
+        <div class="avatar"> 
+          <img src="http://cdn.playbuzz.com/cdn/21ab7243-0380-420f-914c-63d4ce59aa3c/bf1bfae7-1163-4f90-a3b0-4ce677e91f1d.jpg">
+        </div>
+        <div class="profile-name"> {{profile.fullname}} </div>
+      </div>
+    </div>   
   </div>
 </template>
