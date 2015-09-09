@@ -12,12 +12,15 @@ Router.route('/', {
 
 Router.route('/login', {
   name: 'login_page',
-  controller: 'UsersController',
   where: 'client'
 });
 
+
 Router.route('/:username', {
-  name: 'view_profile',
-  controller: 'UsersController',
-  where: 'client'
+    name: 'view_profile',
+    // controller: 'ProfilesController',
+    where: 'client',
+    data: function() {
+        return Meteor.users.findOne({username: this.params.username});
+    }
 });

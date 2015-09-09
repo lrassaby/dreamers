@@ -9,6 +9,7 @@ Template.ViewProfile.events({
 /*****************************************************************************/
 Template.ViewProfile.helpers({
     editable: function() {
+      debugger;
       return this.username == Meteor.user().username;
     }
 });

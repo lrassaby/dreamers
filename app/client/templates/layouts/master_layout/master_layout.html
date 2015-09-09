@@ -1,4 +1,7 @@
 <template name="MasterLayout">
+  {{#if currentUser}}
+    {{> Topbar}}
+  {{/if}}
   <div class="content">
     {{> yield}}
   </div>
