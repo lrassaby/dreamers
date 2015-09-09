@@ -22,6 +22,7 @@ HomeController = RouteController.extend({
   // return Posts.findOne({_id: this.params._id});
   
   data: function () {
+    console.log('test');
   },
   
   // You can provide any of the hook options

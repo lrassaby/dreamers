@@ -18,7 +18,7 @@ Router.route('/login', {
 
 Router.route('/:username', {
     name: 'view_profile',
-    // controller: 'ProfilesController',
+    controller: 'ProfilesController',
     where: 'client',
     data: function() {
         return Meteor.users.findOne({username: this.params.username});
