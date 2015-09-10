@@ -13,7 +13,6 @@ Template.ViewProfile.helpers({
     return Meteor.users.find({username: routeUser}).fetch()[0].profile;
   },
   editable: function() {
-    console.log('huh');
     debugger;
     return this.username == Meteor.user().username;
   }
