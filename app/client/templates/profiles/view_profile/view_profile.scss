@@ -11,6 +11,9 @@
   }
   .cover-photo {
     background-image: url("http://25.media.tumblr.com/tumblr_mcn621Mof41qbajzvo1_1280.jpg");
+    background-size: auto 100%; 
+    background-repeat: no-repeat;
+    background-position: center; 
     height: 400px;
   }
   .avatar {
@@ -22,6 +25,10 @@
     height: 200px;
     position: relative;
     width: 200px;
+    background-image: url("http://cdn.playbuzz.com/cdn/21ab7243-0380-420f-914c-63d4ce59aa3c/bf1bfae7-1163-4f90-a3b0-4ce677e91f1d.jpg"); 
+    background-size: auto 100%; 
+    background-repeat: no-repeat;
+    background-position: center; 
 
     img {
       border-radius: 8px;
@@ -30,6 +37,7 @@
       position: absolute;
       top: 0;
       width: 100%;
+      display:none; 
     }
   }
 }

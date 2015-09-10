@@ -11,7 +11,7 @@ Template.Signup.events({
     // do some client side validation here
     return Meteor.call('createUserNoRole', data, function(err, username) {
       if (!err) {
-        // Meteor.loginWithPassword(data.email, data.password);
+        Meteor.loginWithPassword(data.email, data.password);
       } else {
         //Insertion Error
         console.log(err);

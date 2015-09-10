@@ -4,10 +4,14 @@ Router.configure({
   notFoundTemplate: 'NotFound'
 });
 
-Router.route('/', {
-  name: 'home',
-  controller: 'HomeController',
-  where: 'client'
+Router.route('/', function() {
+  if (Meteor.userId()) {
+    this.render('DirectoryPage', {
+      controller: 'HomeController'
+    });
+  } else if (!Meteor.userId() && !Meteor.loggingIn()) {
+    this.render('Landing');
+  } 
 });
 
 Router.route('/login', {
@@ -19,5 +23,5 @@ Router.route('/login', {
 Router.route('/:username', {
     name: 'view_profile',
     controller: 'ProfilesController',
-    where: 'client',
+    where: 'client'
 });
