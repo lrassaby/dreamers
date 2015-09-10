@@ -9,7 +9,8 @@ Template.ViewProfile.events({
 /*****************************************************************************/
 Template.ViewProfile.helpers({
   profile: function() {    
-    return Session.get("userProfile");
+    routeUser = Router.current().params.username;    
+    return Meteor.users.find({username: routeUser}).fetch()[0].profile;
   },
   editable: function() {
     console.log('huh');
@@ -22,11 +23,7 @@ Template.ViewProfile.helpers({
 /* ViewProfile: Lifecycle Hooks */
 /*****************************************************************************/
 Template.ViewProfile.onCreated(function () {
-  routeUser = Router.current().params.username;
-  userProfile = Meteor.users.find({username: routeUser}).fetch();
-  Meteor.call('getUserProfile', routeUser, function(err, result) {
-      Session.set("userProfile", result);
-    });
+
 });
 
 Template.ViewProfile.onRendered(function () {

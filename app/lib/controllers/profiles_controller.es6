@@ -6,6 +6,7 @@ ProfilesController = RouteController.extend({
   // this.subscribe('item', this.params._id).wait();
   
   subscriptions: function() {
+    return this.subscribe('currProfile', Router.current().params.username);    
   },
   
   // Subscriptions or other things we want to "wait" on. This also
