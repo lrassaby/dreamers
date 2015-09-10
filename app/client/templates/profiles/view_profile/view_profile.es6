@@ -10,7 +10,7 @@ Template.ViewProfile.events({
 Template.ViewProfile.helpers({
   profile: function() {    
     routeUser = Router.current().params.username;    
-    return Meteor.users.find({username: routeUser}).fetch()[0].profile;
+    return Meteor.users.find({username: routeUser}, {fields: {'profile': true}}).fetch()[0].profile;
   },
   editable: function() {
     debugger;

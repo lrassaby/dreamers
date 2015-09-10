@@ -3,5 +3,13 @@ Meteor.publish('Profiles', (/* args */) => {
 });
 
 Meteor.publish('currProfile', (data) => {
-  return Meteor.users.find({username: data});
+  console.log(Meteor.users.find({username: data}).fetch())
+  return Meteor.users.find({username: data}, {fields: {
+    '_id': true,
+    'profile': true,
+    'username': true
+  }});
+  
+
+  
 });
