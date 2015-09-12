@@ -7,8 +7,8 @@ Meteor.publish('currProfile', (data) => {
     '_id': true,
     'profile': true,
     'username': true
-  }});
-  
+}});
+
 
   
 });

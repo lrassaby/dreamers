@@ -24,7 +24,6 @@ ProfilesController = RouteController.extend({
   // return Posts.findOne({_id: this.params._id});
   
   data: function(){
-    debugger;
   },
   
   // You can provide any of the hook options
