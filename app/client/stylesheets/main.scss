@@ -12,5 +12,17 @@ html {
     font-family: $standard-font-stack;
     font-weight: 400;
     font-size: 13px;
+    background-color: $body-background-color;
   }
+}
+
+// common styles
+.module {
+  border: 1px solid $secondary-border-color;
+  background: #FFF;
+  background-clip: padding-box;
+  border-radius: 6px;
+  line-height: 16px;
+  position: relative;
+  margin-bottom: 10px;
 }

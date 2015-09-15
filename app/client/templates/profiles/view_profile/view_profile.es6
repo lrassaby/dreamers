@@ -2,6 +2,9 @@
 /* ViewProfile: Event Handlers */
 /*****************************************************************************/
 Template.ViewProfile.events({
+  "click .change-profile-photo": function() {
+
+  }
 });
 
 /*****************************************************************************/
@@ -10,11 +13,10 @@ Template.ViewProfile.events({
 Template.ViewProfile.helpers({
   profile: function() {    
     routeUser = Router.current().params.username;    
-    return Meteor.users.find({username: routeUser}, {fields: {'profile': true}}).fetch()[0].profile;
+    return Meteor.users.find({username: routeUser}).fetch()[0].profile;
   },
   editable: function() {
-    debugger;
-    return this.username == Meteor.user().username;
+    return Router.current().params.username == Meteor.user().username;
   }
 });
 

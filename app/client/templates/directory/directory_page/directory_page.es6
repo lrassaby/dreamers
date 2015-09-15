@@ -8,6 +8,10 @@ Template.DirectoryPage.events({
 /* DirectoryPage: Helpers */
 /*****************************************************************************/
 Template.DirectoryPage.helpers({
+  profiles: function() {      
+    // TODO: move this logic to server side
+    return _.map(Meteor.users.find().fetch(), (u) => u.profile);
+  }
 });
 
 /*****************************************************************************/

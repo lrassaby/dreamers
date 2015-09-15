@@ -18,6 +18,7 @@ Template.Topbar.onCreated(function () {
 });
 
 Template.Topbar.onRendered(function () {
+  $(".top-bar").foundation();
 });
 
 Template.Topbar.onDestroyed(function () {

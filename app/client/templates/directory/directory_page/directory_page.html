@@ -1,5 +1,20 @@
 <template name="DirectoryPage">
   <div class="directory-page">
-    <h1>Find me in app/client/templates/directory/directory_page/directory_page</h1>
+    <div class="search-wrapper"> <!-- TODO: move to top bar -->
+      <div class="row">
+        <div class="small-4 columns"> 
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="directory-wrapper module">
+          {{#each profiles}} 
+            {{> DirectoryProfile}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
   </div>
 </template>

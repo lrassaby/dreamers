@@ -6,18 +6,34 @@ Router.configure({
 
 Router.route('/', function() {
   if (Meteor.userId()) {
-    this.render('DirectoryPage', {
-      controller: 'HomeController'
-    });
+    this.render('DirectoryPage');
   } else if (!Meteor.userId() && !Meteor.loggingIn()) {
     this.render('Landing');
   } 
+}, {
+  controller: 'DirectoryController'
 });
 
-Router.route('/login', {
-  name: 'login_page',
-  where: 'client'
+Router.route('/login', function() {
+  if (Meteor.userId()) {
+    Router.go('/');
+  } else if (!Meteor.userId() && !Meteor.loggingIn()) {
+    this.render('LoginPage');
+  } 
 });
+
+// TODO: make the login redirect work
+// we want to be sure that the user is logging in
+// for all routes but login
+// Router.onBeforeAction(function () {
+//     if (!Meteor.user() && !Meteor.loggingIn()) {
+//         Router.go('/login');
+//     } else {
+//         this.next();
+//     }
+// }, {
+//     except: ['/', '/login']
+// });
 
 
 Router.route('/:username', {

@@ -4,22 +4,27 @@
 @import 'client/stylesheets/variables';
 
 .view-profile {
-  background-color: #f5f8fa;
   .profile-name {
     font-size: 20px;
     font-family: $header-font-stack;
   }
-  .cover-photo {
-    background-image: url("http://25.media.tumblr.com/tumblr_mcn621Mof41qbajzvo1_1280.jpg");
-    background-size: auto 100%; 
-    background-repeat: no-repeat;
-    background-position: center; 
-    height: 400px;
+  .profile-top {
+    .cover-photo {
+      background: url("http://25.media.tumblr.com/tumblr_mcn621Mof41qbajzvo1_1280.jpg") no-repeat center;
+      background-size: cover; 
+      height: 300px;
+      position: relative;
+    }
+    .profile-navbar {
+      height: 60px;
+      background-color: $dreamers-white;
+      border-bottom: 1px solid $secondary-border-color;
+    }
   }
   .avatar {
-    margin-top: -120px;
+    margin-top: -170px;
     background: #fff;
-    border: 5px solid #fff;
+    border: 5px solid $dreamers-white;
     border-radius: 12px;
     box-shadow: 0 0 3px rgba(136,153,166,0.15);
     height: 200px;
@@ -39,5 +44,15 @@
       width: 100%;
       display:none; 
     }
+  }
+  .change-photo {
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    left: auto;
+    color:white;
+    text-shadow: 0 0 2px black;
+    opacity: 0.5;
+    font-size: 20px;
   }
 }
