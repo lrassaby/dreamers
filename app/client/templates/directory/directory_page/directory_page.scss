@@ -1,6 +1,15 @@
 /*****************************************************************************/
 /* DirectoryPage: Style */
 /*****************************************************************************/
+@import 'client/stylesheets/variables';
+
 .directory-page {
   margin-top: 10px;
+  .directory-wrapper {
+    &:last-child {
+      :last-child { 
+        border-bottom: none;
+      }
+    }
+  }
 }

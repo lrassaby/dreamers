@@ -1,26 +1,23 @@
 /*****************************************************************************/
-/* DirectoryPage: Event Handlers */
+/* CreatePost: Event Handlers */
 /*****************************************************************************/
-Template.DirectoryPage.events({
+Template.CreatePost.events({
 });
 
 /*****************************************************************************/
-/* DirectoryPage: Helpers */
+/* CreatePost: Helpers */
 /*****************************************************************************/
-Template.DirectoryPage.helpers({
-  profiles: function() {      
-    return Meteor.users.find().fetch();
-  }
+Template.CreatePost.helpers({
 });
 
 /*****************************************************************************/
-/* DirectoryPage: Lifecycle Hooks */
+/* CreatePost: Lifecycle Hooks */
 /*****************************************************************************/
-Template.DirectoryPage.onCreated(function () {
+Template.CreatePost.onCreated(function () {
 });
 
-Template.DirectoryPage.onRendered(function () {
+Template.CreatePost.onRendered(function () {
 });
 
-Template.DirectoryPage.onDestroyed(function () {
+Template.CreatePost.onDestroyed(function () {
 });

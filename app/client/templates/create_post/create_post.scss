@@ -1,0 +1,12 @@
+/*****************************************************************************/
+/* CreatePost: Style */
+/*****************************************************************************/
+.create-post {
+  textarea {
+    margin-bottom: 6px;
+    resize: vertical;  // TODO: put a javascript height instead
+  }
+  input.button {
+    margin: 0;
+  }
+}

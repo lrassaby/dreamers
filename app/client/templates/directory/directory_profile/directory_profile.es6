@@ -2,6 +2,9 @@
 /* DirectoryProfile: Event Handlers */
 /*****************************************************************************/
 Template.DirectoryProfile.events({
+  "click .directory-profile": function() {
+    window.location = this.username;
+  }
 });
 
 /*****************************************************************************/

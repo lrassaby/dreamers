@@ -2,11 +2,15 @@
   <div class="view-profile">
     <div class="profile-top">
         <div class="cover-photo" style=""> <!-- add background here -->
-          {{#if editable}}
-            <div class="change-photo">
-              <i class="fa fa-camera"></i>
-            </div>
-          {{/if}}
+        {{#if editable}}
+        <div class="change-photo-wrapper">
+          <input class="hidden-input" id="change-cover-photo-input" type="file"/>
+          <div id="change-cover-photo" class="change-photo">
+            <span class="change-photo-text">Upload a new cover photo</span>
+            <i class="fa fa-camera"></i>
+          </div>
+        </div>
+        {{/if}}
         </div> 
         <div class="profile-navbar"></div>
     </div> 
@@ -15,8 +19,13 @@
         <div class="avatar"> 
           <img src="http://cdn.playbuzz.com/cdn/21ab7243-0380-420f-914c-63d4ce59aa3c/bf1bfae7-1163-4f90-a3b0-4ce677e91f1d.jpg">
           {{#if editable}}
-          <div class="change-photo">
-            <i class="fa fa-camera"></i>
+          <div class="change-photo-wrapper">
+            <!-- <p> Change profile photo </p> -->
+            <input class="hidden-input" id="change-profile-photo-input" type="file"/>
+            <div id="change-profile-photo" class="change-photo">
+              <span class="change-photo-text">Upload a new profile photo</span>
+              <i class="fa fa-camera"></i>
+            </div>
           </div>
           {{/if}}
         </div>
@@ -28,24 +37,12 @@
     </div>  
     <div class="page-content">
       <div class="row">
-        <div class="small-4 columns">
-          <div class="profile-dash module">
-            <div class="profile-name"> {{profile.fullname}} </div>
-            <div class="profession"> {{profile.professions}} </div>
-          </div>
+        <div class="small-4 columns page-content-left">
+         {{> ProfileDash}}
         </div>
-        <div class="small-8 columns">
-          <div class="wall">
-            <div class="wall-item module">
-              Mlkshk pork belly lumbersexual banh mi, sriracha umami Portland synth deep v PBR&B. Migas salvia Echo Park, lumbersexual paleo mixtape American Apparel tote bag selfies post-ironic chambray PBR&B vinyl. Bitters chia pork belly meh, semiotics forage brunch chambray retro lo-fi paleo cold-pressed tousled. Synth tote bag whatever raw denim, cornhole lumbersexual four dollar toast kogi hoodie quinoa Bushwick. Letterpress drinking vinegar vinyl, messenger bag ethical wolf Thundercats biodiesel typewriter. Truffaut mumblecore fingerstache, meh whatever selfies quinoa letterpress migas. Bushwick hella four dollar toast paleo chambray irony.
-            </div><div class="wall-item module">
-              Letterpress drinking vinegar Pinterest 90's High Life literally ugh tote bag migas, direct trade chillwave leggings aesthetic squid. Heirloom Thundercats butcher VHS, tousled drinking vinegar 8-bit disrupt squid Wes Anderson literally bitters pop-up. Fanny pack biodiesel cronut, cray PBR&B kale chips wolf health goth. Blog twee art party McSweeney's, bespoke quinoa health goth fixie kitsch tilde vegan chambray tattooed. Truffaut try-hard meditation raw denim leggings wayfarers biodiesel, lo-fi 8-bit jean shorts fashion axe cronut post-ironic pug. VHS scenester XOXO, hashtag tattooed deep v selfies trust fund. Gentrify cornhole semiotics Banksy, readymade yr hella twee quinoa selfies Helvetica fingerstache kitsch roof party umami.
-            </div><div class="wall-item module">
-              Farm-to-table Etsy next level, banjo Truffaut cardigan keytar lomo. Selvage fingerstache pug raw denim fap cray Tumblr paleo fixie, chillwave yr direct trade actually forage. Put a bird on it street art meditation Tumblr Thundercats organic. Literally bitters meggings, hashtag master cleanse narwhal squid locavore High Life roof party Bushwick pop-up kogi fashion axe. Skateboard cardigan wolf 3 wolf moon banjo, lumbersexual banh mi normcore fanny pack whatever. Odd Future leggings tousled, banh mi Echo Park dreamcatcher lo-fi Neutra. Cold-pressed typewriter craft beer street art lumbersexual farm-to-table plaid mustache, aesthetic High Life deep v.
-            </div><div class="wall-item module">
-              Cray bespoke pug pour-over biodiesel migas, master cleanse tousled. Butcher try-hard before they sold out Schlitz, Kickstarter 3 wolf moon mixtape shabby chic hoodie post-ironic. Health goth Godard roof party, Austin synth readymade plaid Odd Future mustache. Kickstarter deep v shabby chic, Carles Helvetica taxidermy mlkshk wayfarers jean shorts artisan. Banh mi tousled sustainable, banjo keffiyeh hella pour-over Austin readymade butcher Neutra lomo. Keytar organic gluten-free banjo salvia next level. Authentic slow-carb brunch, bitters biodiesel leggings ethical jean shorts kitsch retro +1.
-            </div>
-          </div>
+        <div class="small-8 columns page-content-right">
+          {{> CreatePost}}
+          {{> Wall}}
         </div> 
       </div>
     </div>

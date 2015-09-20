@@ -1,5 +1,17 @@
 /*****************************************************************************/
 /* DirectoryProfile: Style */
 /*****************************************************************************/
+@import 'client/stylesheets/variables';
+
 .directory-profile {
+  height: 100px;
+  .profile-photo {
+    height: 90%;
+    width: auto;
+  }
+  padding: 8px;
+  border-bottom: 1px solid $secondary-border-color;
+  a {
+    color: #333;
+  }
 }

@@ -1,26 +1,23 @@
 /*****************************************************************************/
-/* DirectoryPage: Event Handlers */
+/* ProfileDash: Event Handlers */
 /*****************************************************************************/
-Template.DirectoryPage.events({
+Template.ProfileDash.events({
 });
 
 /*****************************************************************************/
-/* DirectoryPage: Helpers */
+/* ProfileDash: Helpers */
 /*****************************************************************************/
-Template.DirectoryPage.helpers({
-  profiles: function() {      
-    return Meteor.users.find().fetch();
-  }
+Template.ProfileDash.helpers({
 });
 
 /*****************************************************************************/
-/* DirectoryPage: Lifecycle Hooks */
+/* ProfileDash: Lifecycle Hooks */
 /*****************************************************************************/
-Template.DirectoryPage.onCreated(function () {
+Template.ProfileDash.onCreated(function () {
 });
 
-Template.DirectoryPage.onRendered(function () {
+Template.ProfileDash.onRendered(function () {
 });
 
-Template.DirectoryPage.onDestroyed(function () {
+Template.ProfileDash.onDestroyed(function () {
 });

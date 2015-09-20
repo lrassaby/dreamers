@@ -17,3 +17,6 @@ matthew:foundation5-sass
 skinnygeek1010:parse-form
 meteorhacks:fast-render
 erasaur:meteor-lodash
+cfs:standard-packages
+cfs:gridfs
+cfs:ui

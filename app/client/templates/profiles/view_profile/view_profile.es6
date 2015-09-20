@@ -2,8 +2,11 @@
 /* ViewProfile: Event Handlers */
 /*****************************************************************************/
 Template.ViewProfile.events({
-  "click .change-profile-photo": function() {
-
+  "click #change-cover-photo": function() {
+    $("#change-cover-photo-input:hidden").trigger('click');
+  },
+  "click #change-profile-photo": function() {
+    $("#change-profile-photo-input:hidden").trigger('click');
   }
 });
 
