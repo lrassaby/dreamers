@@ -3,10 +3,18 @@
 /*****************************************************************************/
 Template.ViewProfile.events({
   "click #change-cover-photo": function() {
-    $("#change-cover-photo-input:hidden").trigger('click');
+    filepicker.pick(
+      function(Blob){
+        console.log(Blob.url);
+      }
+    );
   },
   "click #change-profile-photo": function() {
-    $("#change-profile-photo-input:hidden").trigger('click');
+    filepicker.pick(
+      function(Blob){
+        console.log(Blob.url);
+      }
+    );
   }
 });
 

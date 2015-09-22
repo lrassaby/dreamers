@@ -39,7 +39,7 @@
     background-size: auto 100%; 
     background-repeat: no-repeat;
     background-position: center; 
-    overflow: hidden;
+    // overflow: hidden;
 
     img {
       border-radius: 8px;
@@ -68,10 +68,6 @@
       background-color: black;
       bottom: 0;
       transition-delay: 0s;
-
-      // &::before{
-      //   content:"Upload a new profile photo"; 
-      // }
     }
     
   }
