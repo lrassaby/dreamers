@@ -23,3 +23,9 @@ Meteor.publish("directory", function () {
     });
   }
 });
+
+Meteor.publish('wall', function (username) {
+  // Show newest posts at the top
+  let receiver_id = Meteor.users.findOne({username: username})._id;
+  return Posts.find({receiver_id: receiver_id}, {sort: {createdAt: -1}});
+});

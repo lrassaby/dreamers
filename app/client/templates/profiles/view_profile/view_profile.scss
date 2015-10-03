@@ -12,22 +12,21 @@
     font-family: $header-font-stack;
   }
   .profile-top {
+    padding-top: 50px;
+    background-color: $dreamers-white;
+    border-bottom: 1px solid $secondary-border-color;
+
     .cover-photo {
-      background: url("http://25.media.tumblr.com/tumblr_mcn621Mof41qbajzvo1_1280.jpg") no-repeat center;
+      // background: url("http://25.media.tumblr.com/tumblr_mcn621Mof41qbajzvo1_1280.jpg") no-repeat center;
       background-size: cover; 
       height: 300px;
       position: relative;
-    }
-    .profile-navbar {
-      height: 60px;
-      background-color: $dreamers-white;
-      border-bottom: 1px solid $secondary-border-color;
     }
   }
 
 
   .avatar {
-    margin: -170px auto auto auto;
+    margin: 0 auto;
     background: #fff;
     border: 5px solid $dreamers-white;
     border-radius: 50%; //12px; 
@@ -35,7 +34,7 @@
     height: 200px;
     position: relative;
     width: 200px;
-    background-image: url("http://cdn.playbuzz.com/cdn/21ab7243-0380-420f-914c-63d4ce59aa3c/bf1bfae7-1163-4f90-a3b0-4ce677e91f1d.jpg"); 
+    // background-image: url("http://cdn.playbuzz.com/cdn/21ab7243-0380-420f-914c-63d4ce59aa3c/bf1bfae7-1163-4f90-a3b0-4ce677e91f1d.jpg"); 
     background-size: auto 100%; 
     background-repeat: no-repeat;
     background-position: center; 
@@ -93,18 +92,12 @@
   }
 
   .page-content { 
-    .page-content-left {
-      margin-top: 10px;
-      .module {
-        padding: 5px;
-      }
+    .module {
+      padding: 10px;
+      line-height: 150%;
     }
-    .page-content-right {
-      margin-top: -15px;
-      .module {
-        padding: 5px;
-      }
-    }
+    font-size: 14px;
+    margin-top: 10px;
   }
 
 }

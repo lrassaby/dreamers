@@ -1,26 +1,23 @@
 /*****************************************************************************/
-/* Wall: Event Handlers */
+/* Newsfeed: Event Handlers */
 /*****************************************************************************/
-Template.Wall.events({
+Template.Newsfeed.events({
 });
 
 /*****************************************************************************/
-/* Wall: Helpers */
+/* Newsfeed: Helpers */
 /*****************************************************************************/
-Template.Wall.helpers({
-  "wall_posts": function() {
-    return Posts.find({"receiver_id": Meteor.users.findOne({username: Router.current().params.username})._id}, {sort: {createdAt: -1}});
-  }
+Template.Newsfeed.helpers({
 });
 
 /*****************************************************************************/
-/* Wall: Lifecycle Hooks */
+/* Newsfeed: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Wall.onCreated(function () {
+Template.Newsfeed.onCreated(function () {
 });
 
-Template.Wall.onRendered(function () {
+Template.Newsfeed.onRendered(function () {
 });
 
-Template.Wall.onDestroyed(function () {
+Template.Newsfeed.onDestroyed(function () {
 });

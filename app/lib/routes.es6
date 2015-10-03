@@ -22,9 +22,7 @@ Router.route('/login', function() {
   } 
 });
 
-// TODO: make the login redirect work
-// we want to be sure that the user is logging in
-// for all routes but login
+
 Router.onBeforeAction(function () {
     if (!Meteor.user() && !Meteor.loggingIn()) {
         Router.go('/login');

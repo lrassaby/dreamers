@@ -1,12 +1,6 @@
 /*****************************************************************************/
-/* CreatePost: Style */
+/* WallModule: Style */
 /*****************************************************************************/
-.create-post {
-  textarea {
-    margin-bottom: 6px;
-    resize: none;
-  }
-  input.button {
-    margin: 0;
-  }
+.wall-module {
+  word-wrap: break-word;
 }

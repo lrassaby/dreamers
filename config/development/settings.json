@@ -1,6 +1,7 @@
 {
-  "public": {
-  },
-
-  "sample": "value"
+  "public" : {
+    "filepicker":{
+      "key":"AmlUwhdjNSX2P1re4EqCnz"
+    }
+  }
 }

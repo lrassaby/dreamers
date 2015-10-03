@@ -4,13 +4,34 @@
 @import 'client/stylesheets/variables';
 
 .directory-profile {
-  height: 100px;
-  .profile-photo {
-    height: 90%;
-    width: auto;
-  }
+  height: 80px;
   padding: 8px;
   border-bottom: 1px solid $secondary-border-color;
+  overflow: hidden;
+  .profile-photo-container {
+    min-width: 80px;
+    min-height: 80px;
+  }
+  .profile-photo {
+    background-size: auto 100%; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    img {
+      display: none;
+    }
+  }
+  .fullname {
+    margin-top: 3px;
+    font-size: 18px;
+    font-family: $header-font-stack;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
   a {
     color: #333;
   }

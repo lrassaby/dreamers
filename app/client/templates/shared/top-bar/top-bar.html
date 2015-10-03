@@ -17,13 +17,12 @@
         <ul class="right">
           <li class="has-dropdown">
             <a href="#">
-              <div class="user-photo">
-                <img src="http://cdn.playbuzz.com/cdn/21ab7243-0380-420f-914c-63d4ce59aa3c/bf1bfae7-1163-4f90-a3b0-4ce677e91f1d.jpg"/>
+              <div class="user-photo" style="background-image: url('{{currentUser.profile.avatar_url}}')">
+                <img src="{{currentUser.profile.avatar_url}}"/>
               </div>
             </a>
             <ul class="dropdown">
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Preferences</a></li>
+              <li><a href="/{{currentUser.username}}">Profile</a></li>
               <li><a href="#" class="sign-out">Sign out</a></li>
             </ul>
           </li>

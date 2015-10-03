@@ -1,26 +1,23 @@
 /*****************************************************************************/
-/* Wall: Event Handlers */
+/* WallModule: Event Handlers */
 /*****************************************************************************/
-Template.Wall.events({
+Template.WallModule.events({
 });
 
 /*****************************************************************************/
-/* Wall: Helpers */
+/* WallModule: Helpers */
 /*****************************************************************************/
-Template.Wall.helpers({
-  "wall_posts": function() {
-    return Posts.find({"receiver_id": Meteor.users.findOne({username: Router.current().params.username})._id}, {sort: {createdAt: -1}});
-  }
+Template.WallModule.helpers({
 });
 
 /*****************************************************************************/
-/* Wall: Lifecycle Hooks */
+/* WallModule: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Wall.onCreated(function () {
+Template.WallModule.onCreated(function () {
 });
 
-Template.Wall.onRendered(function () {
+Template.WallModule.onRendered(function () {
 });
 
-Template.Wall.onDestroyed(function () {
+Template.WallModule.onDestroyed(function () {
 });

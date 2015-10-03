@@ -1,8 +1,24 @@
 <template name="ProfileDash">
   <div class="profile-pane">
-    <div class="profile-dash module">
-      <div class="profile-name"> My name is {{profile.fullname}} </div>
-      <div class="interests"> I'm interested in: {{profile.interests}} </div>
+    <div class="profile-dash">
+      <h1 class="hero-title">{{fullname}} </h1>
+      <div class="hero-description" contenteditable="true"> 
+        {{#if profile.story}} 
+          profile.story
+        {{else}}
+          <div class="story-question">
+            {{#if currentUser}}
+              What's your story?
+            {{/if}}
+          </div>
+        {{/if}}
+      </div>
+      <ul class="socialbar">
+        <li><a href="http://github.com/lrassaby" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
+        <li><a href="http://linkedin.com/in/lrassaby" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="http://facebook.com/lrassaby" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://www.google.com/recaptcha/mailhide/d?k=01YmFUWNkuMPavZceDFMbXYQ==&amp;c=RXpKo5S3cxccsRIoW1X4n9n9dQpw9z79NHEcBcAJfB8=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501YmFUWNkuMPavZceDFMbXYQ\75\75\46c\75RXpKo5S3cxccsRIoW1X4n9n9dQpw9z79NHEcBcAJfB8\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Email"><i class="fa fa-envelope"></i></a></li>
+      </ul>
     </div>
   </div>
 </template>
